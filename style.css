@@ -1,0 +1,67 @@
+/* ===== Mobile Fit Patch ===== */
+@media (max-width: 900px){
+  body{
+    padding: 14px;
+    align-items: flex-start;
+  }
+
+  .app{
+    grid-template-columns: 1fr; /* stack panels */
+    gap: 12px;
+  }
+
+  .head{
+    padding: 14px 14px;
+  }
+
+  .main{
+    padding: 14px;
+  }
+
+  .question{
+    font-size: 18px;
+  }
+
+  .sub{
+    font-size: 12px;
+  }
+
+  .btn{
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .key{
+    width: 26px;
+    height: 26px;
+    border-radius: 9px;
+  }
+
+  .choiceText{
+    font-size: 13px;
+  }
+
+  .statGrid{
+    grid-template-columns: 1fr 1fr; /* still 2, but fits */
+  }
+
+  .items{
+    max-height: 220px; /* avoid huge scrolling */
+  }
+}
+
+/* even smaller phones */
+@media (max-width: 420px){
+  body{ padding: 10px; }
+
+  .question{ font-size: 17px; }
+
+  .statGrid{
+    grid-template-columns: 1fr; /* stack stats */
+  }
+
+  .pill, .chip{
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+}
