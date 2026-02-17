@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STS Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <section class="card">
+      <div class="head">
+        <div class="title">
+          <span class="dot"></span>
+          <span class="txt">STS Trivia</span>
+        </div>
+        <div class="pill" id="scorePill">Score: 0</div>
+      </div>
+
+      <div class="main">
+        <div class="qmeta">
+          <div class="chip">Q <strong id="qNum">0</strong>/<span id="qTotal">30</span></div>
+          <div class="chip diffChip" id="diffChip">Diff: <strong id="qDiff">—</strong></div>
+          <div class="chip">Streak: <strong id="streak">0</strong></div>
+          <div class="progress"><div class="bar" id="bar"></div></div>
+        </div>
+
+        <div class="timerWrap" id="timerWrap"><div class="timerBar" id="timerBar"></div></div>
+        <div class="timerHint" id="timerHint"><span>15s</span><span>think fast 💀</span></div>
+
+        <div class="question" id="questionText">Press Start.</div>
+        <p class="sub" id="questionSub">15 seconds each question. One correct answer only.</p>
+
+        <div class="choices" id="choices"></div>
+
+        <div class="feedback" id="feedback">
+          <div class="fbRow">
+            <span class="badge" id="resultBadge">—</span>
+            <span class="badge" id="answerBadge">—</span>
+          </div>
+          <div class="explain" id="explain"></div>
+          <div class="readHint" id="readHint"></div>
+        </div>
+
+        <div class="controls" id="startControls">
+          <button class="mini primary" id="startBtn">Start</button>
+        </div>
+
+        <div class="result" id="resultScreen">
+          <h2>Finished 👑</h2>
+          <div class="bigNum" id="finalScoreBig">0</div>
+          <p id="finalLine">—</p>
+
+          <div class="smallRow">
+            <button class="mini good" id="exportBtn">Export Result Card</button>
+            <button class="mini primary" id="playAgainBtn">Play Again</button>
+          </div>
+
+          <p class="resultTip">Easy/Medium/Hard mixed. Only 1 correct each time 😈</p>
+        </div>
+
+        <div class="footerNote">
+          Keyboard (PC): <span class="mono">A B C D</span> · Auto-next after answer/timeout.
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast"><span class="b"></span><span id="toastTxt">Nice.</span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
